@@ -18,12 +18,7 @@ import teammates.common.util.SanitizationHelper;
  *
  */
 public class CourseDetailsBundle {
-    public CourseAttributes course;
-    public CourseStats stats = new CourseStats();
-
-    public List<FeedbackSessionDetailsBundle> feedbackSessions = new ArrayList<>();
-    public List<SectionDetailsBundle> sections = new ArrayList<>();
-
+  
 
     /**
      * Gets all FeedbackSessionAttributes in this CourseDetailsBundle.
@@ -35,6 +30,13 @@ public class CourseDetailsBundle {
         }
         return feedbackSessionAttributes;
     }
+    
+      public CourseAttributes course;
+    public CourseStats stats = new CourseStats();
+
+    public List<FeedbackSessionDetailsBundle> feedbackSessions = new ArrayList<>();
+    public List<SectionDetailsBundle> sections = new ArrayList<>();
+
 
     public static void sortDetailedCoursesByCourseId(List<CourseDetailsBundle> courses) {
         Collections.sort(courses, new Comparator<CourseDetailsBundle>() {
