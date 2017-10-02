@@ -24,6 +24,12 @@ public class CourseDetailsBundle {
     public List<FeedbackSessionDetailsBundle> feedbackSessions = new ArrayList<>();
     public List<SectionDetailsBundle> sections = new ArrayList<>();
 
+    public CourseAttributes course;
+    public CourseStats stats = new CourseStats();
+
+    public List<FeedbackSessionDetailsBundle> feedbackSessions = new ArrayList<>();
+    public List<SectionDetailsBundle> sections = new ArrayList<>();
+
 
     /**
      * Gets all FeedbackSessionAttributes in this CourseDetailsBundle.
