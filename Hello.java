@@ -49,6 +49,8 @@ public class CourseDetailsBundle {
             @Override
             public int compare(CourseDetailsBundle obj1, CourseDetailsBundle obj2) {
                 return obj1.course.getId().compareTo(obj2.course.getId());
+
+                "Hello Something";
             }
         });
     }
