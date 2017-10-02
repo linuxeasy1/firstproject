@@ -1,13 +1,13 @@
 package teammates.common.datatransfer;
+import teammates.common.datatransfer.attributes.CourseAttributes;
+import teammates.common.datatransfer.attributes.FeedbackSessionAttributes;
+import teammates.common.util.SanitizationHelper;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import teammates.common.datatransfer.attributes.CourseAttributes;
-import teammates.common.datatransfer.attributes.FeedbackSessionAttributes;
-import teammates.common.util.SanitizationHelper;
 
 /**
  * Represents details of a course, including its students and feedback sessions.
@@ -18,11 +18,7 @@ import teammates.common.util.SanitizationHelper;
  *
  */
 public class CourseDetailsBundle {
-    public CourseAttributes course;
-    public CourseStats stats = new CourseStats();
 
-    public List<FeedbackSessionDetailsBundle> feedbackSessions = new ArrayList<>();
-    public List<SectionDetailsBundle> sections = new ArrayList<>();
 
     public CourseAttributes course;
     public CourseStats stats = new CourseStats();
